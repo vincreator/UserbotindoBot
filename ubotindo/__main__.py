@@ -38,8 +38,8 @@ I'm here to make your group management fun and easy!
 i have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.
 
 ==========================
--> `Maintained by` @MoveAngel & @tomyprs25 .
--> Any issues or need help related to me? join our group [UserBot Indo Support](https://t.me/userbotindo)
+-> `Maintained by` @MoveAngel,@tomyprs25,@oViNc
+-> Any issues or need help related to me? join our group [Gfriend Support](https://t.me/userbotindo)
 ==========================
 
 Wanna Add me to your Group? Just click the button below!
@@ -48,9 +48,9 @@ Wanna Add me to your Group? Just click the button below!
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add to Group 👥", url="t.me/userbotindobot?startgroup=true"
+            text="Add to Group 👥", url="t.me/gfriendofficial_bot?startgroup=true"
         ),
-        InlineKeyboardButton(text="Global Logs 🚫", url="https://t.me/UserIndoBotLog"),
+        InlineKeyboardButton(text="Updates 🚫", url="https://t.me/OfficialGFRD"),
     ]
 ]
 
@@ -168,7 +168,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://i.ibb.co/zJdLsyg/Userindobot.png",
+                "https://telegra.ph/file/4d5647fbab8b991a8d89a.jpg",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
