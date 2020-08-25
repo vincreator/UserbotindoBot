@@ -30,12 +30,12 @@ from emilia.modules.languages import set_language
 
 PM_START_TEXT = """
 Hi {}, my name is {}! If you have any questions on how to use me, read /help.
-Don't forget follow my channel @userbotindocloud for news update.
+Don't forget follow channel @OfficialGFRD for news update.
 You can find the list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is **UserbotindoBot**.
+Hey there! My name is **Gfriend Official Bot**.
 I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
 the things I can help you with.
 """
@@ -45,7 +45,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for my creator to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/MoveAngel)."""
+There are ways of paying him; [Saweria](saweria.co/donate/ovincxugi)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -158,10 +158,10 @@ def start(update, context):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/UserbotindoBot?startgroup=new")],
+                [[InlineKeyboardButton(text="🎉 Add me to your group", url="https://t.me/gfriendofficial_bot?startgroup=new")],
                 [InlineKeyboardButton(text="💭 Language", callback_data="main_setlang"), InlineKeyboardButton(text="⚙️ Connect Group", callback_data="main_connect")],
-                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/userbotindo"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/userbotindocloud")],
-                [InlineKeyboardButton(text="❓ Help", url="https://t.me/UserbotindoBot?start=help"), InlineKeyboardButton(text="💖 Donate", url="http://paypal.me/MoveAngel")]])
+                [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Official_GFRIEND"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/OfficialGFRD")],
+                [InlineKeyboardButton(text="❓ Help", url="https://t.me/gfriendofficial_bot?start=help"), InlineKeyboardButton(text="💖 Donate", url="https://saweria.co/donate/ovincxugi")]])
             update.effective_message.reply_text(
                 tl(update.effective_message, PM_START_TEXT).format(escape_markdown(first_name), escape_markdown(context.bot.first_name), OWNER_ID),
                 disable_web_page_preview=True,
